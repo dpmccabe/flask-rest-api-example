@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+sqlalchemy = "*"
+pytest = "*"
+marshmallow = {editable = true,git = "https://github.com/marshmallow-code/marshmallow.git",ref = "3.0.0rc4"}
+flask-rest-api = "*"
+factory-boy = "*"
+psycopg2 = "*"
+flask-jwt-simple = "*"
+pytest-flask-sqlalchemy = "*"
+
+[requires]
+python_version = "3.7"
