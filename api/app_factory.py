@@ -24,10 +24,6 @@ def create_app(config_name):
         app.config['OPENAPI_SWAGGER_UI_VERSION'] = '3.22.0'
         app.config['OPENAPI_REDOC_PATH'] = '/redoc'
 
-    # import model relationships in predictable order
-    # from backend.models.user import User
-    # from backend.models.post import Post
-
     # init API and endpoints
     from api.lib.api import api
     api.init_app(app)
